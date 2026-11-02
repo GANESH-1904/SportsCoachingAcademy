@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parent Dashboard | Kinetix Sports Academy</title>
+<meta name="description" content="Enrol children in batches, track attendance, read coach feedback, view schedules and pay fees.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.ico?v=5" sizes="any"><link rel="icon" type="image/svg+xml" href="favicon.svg?v=5"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=5"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=5">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Jost:wght@400;500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+</head>
+<body class="dash-body" data-page="dashboard">
+<a class="skip" href="#main">Skip to content</a>
+<div class="dash">
+ <aside class="dash-side" id="side" aria-label="Dashboard navigation">
+  <a class="side-brand" href="index.html" aria-label="Kinetix – back to website"><svg class="logo-mark" viewBox="0 0 64 64" role="img" aria-label="Kinetix Sports Academy logo" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle class="lm-ring" cx="32" cy="32" r="31"/><circle class="lm-disc" cx="32" cy="32" r="26.500"/><ellipse class="lm-fg" cx="38.33" cy="53.00" rx="4.1" ry="1.8" transform="rotate(-46.0 38.33 53.00)"/><ellipse class="lm-fg" cx="43.82" cy="50.25" rx="4.1" ry="1.8" transform="rotate(-63.2 43.82 50.25)"/><ellipse class="lm-fg" cx="48.24" cy="46.01" rx="4.1" ry="1.8" transform="rotate(-80.4 48.24 46.01)"/><ellipse class="lm-fg" cx="51.21" cy="40.65" rx="4.1" ry="1.8" transform="rotate(-97.6 51.21 40.65)"/><ellipse class="lm-fg" cx="52.47" cy="34.64" rx="4.1" ry="1.8" transform="rotate(-114.8 52.47 34.64)"/><ellipse class="lm-fg" cx="51.89" cy="28.54" rx="4.1" ry="1.8" transform="rotate(-132.0 51.89 28.54)"/><ellipse class="lm-fg" cx="25.67" cy="53.00" rx="4.1" ry="1.8" transform="rotate(-134.0 25.67 53.00)"/><ellipse class="lm-fg" cx="20.18" cy="50.25" rx="4.1" ry="1.8" transform="rotate(-116.8 20.18 50.25)"/><ellipse class="lm-fg" cx="15.76" cy="46.01" rx="4.1" ry="1.8" transform="rotate(-99.6 15.76 46.01)"/><ellipse class="lm-fg" cx="12.79" cy="40.65" rx="4.1" ry="1.8" transform="rotate(-82.4 12.79 40.65)"/><ellipse class="lm-fg" cx="11.53" cy="34.64" rx="4.1" ry="1.8" transform="rotate(-65.2 11.53 34.64)"/><ellipse class="lm-fg" cx="12.11" cy="28.54" rx="4.1" ry="1.8" transform="rotate(-48.0 12.11 28.54)"/><polygon class="lm-fg" points="32.00 7.40 32.84 9.64 35.23 9.75 33.36 11.24 34.00 13.55 32.00 12.23 30.00 13.55 30.64 11.24 28.77 9.75 31.16 9.64"/><clipPath id="kmk"><circle cx="32" cy="33.5" r="11.5"/></clipPath><circle class="lm-fg" cx="32" cy="33.5" r="11.5"/><g clip-path="url(#kmk)"><polygon class="lm-ring" points="37.07 26.52 35.94 23.05 38.89 20.91 41.85 23.05 40.72 26.52"/><polygon class="lm-ring" points="40.20 36.17 43.16 34.02 46.11 36.17 44.98 39.64 41.33 39.64"/><polygon class="lm-ring" points="32.00 42.12 34.95 44.27 33.83 47.74 30.17 47.74 29.05 44.27"/><polygon class="lm-ring" points="23.80 36.17 22.67 39.64 19.02 39.64 17.89 36.17 20.84 34.02"/><polygon class="lm-ring" points="26.93 26.52 23.28 26.52 22.15 23.05 25.11 20.91 28.06 23.05"/></g><polygon class="lm-ring" points="32.00 29.36 35.94 32.22 34.43 36.85 29.57 36.85 28.06 32.22"/><path class="lm-ln" d="M32.00 29.36L32.00 25.91M32.00 25.91L26.59 26.06M32.00 25.91L37.41 26.06M35.94 32.22L39.22 31.15M39.22 31.15L37.41 26.06M39.22 31.15L40.75 36.34M34.43 36.85L36.46 39.64M36.46 39.64L40.75 36.34M36.46 39.64L32.00 42.70M29.57 36.85L27.54 39.64M27.54 39.64L32.00 42.70M27.54 39.64L23.25 36.34M28.06 32.22L24.78 31.15M24.78 31.15L23.25 36.34M24.78 31.15L26.59 26.06" fill="none" stroke-width="0.69" stroke-linecap="round" stroke-linejoin="round"/></svg><b>KINETIX</b></a>
+  <nav class="side-nav">
+   <a href="#overview" data-p="overview"><i data-lucide="layout-dashboard" class="icon"></i>Overview</a>
+   <a href="#children" data-p="children"><i data-lucide="users" class="icon"></i>My children</a>
+   <a href="#enroll" data-p="enroll"><i data-lucide="clipboard-check" class="icon"></i>Enrol in batch</a>
+   <a href="#schedule" data-p="schedule"><i data-lucide="calendar-days" class="icon"></i>Schedule</a>
+   <a href="#attendance" data-p="attendance"><i data-lucide="user-check" class="icon"></i>Attendance</a>
+   <a href="#feedback" data-p="feedback"><i data-lucide="message-square-text" class="icon"></i>Coach feedback</a>
+   <a href="#fees" data-p="fees"><i data-lucide="wallet" class="icon"></i>Fees &amp; payments</a>
+   <a href="#messages" data-p="messages"><i data-lucide="bell" class="icon"></i>Messages</a>
+   <a href="#settings" data-p="settings"><i data-lucide="settings" class="icon"></i>Settings</a>
+  </nav>
+  <a class="side-help" href="https://wa.me/919876543210?text=Hi%20Kinetix%2C%20I%20need%20help%20with%20my%20dashboard." target="_blank" rel="noopener"><span data-bi="whatsapp"></span>Help on WhatsApp</a>
+  <a class="side-help" href="index.html"><i data-lucide="globe" class="icon"></i>Back to website</a>
+ </aside>
+ <div class="scrim" id="scrim"></div>
+ <div class="dash-main">
+  <header class="topbar">
+   <div style="display:flex;align-items:center;gap:var(--s3)"><button class="icon-btn side-toggle" id="sideToggle" type="button" aria-label="Open menu" aria-controls="side"><i data-lucide="menu" class="icon"></i></button>
+    <div><h1>Parent Dashboard</h1><p id="welcome">Welcome back!</p></div></div>
+   <div class="top-tools">
+    <button class="icon-btn" data-theme-toggle type="button" aria-label="Toggle dark mode"></button>
+    <button class="icon-btn" data-rtl-toggle type="button" aria-label="Toggle right-to-left layout">RTL</button>
+    <a class="icon-btn" href="#messages" aria-label="Notifications"><i data-lucide="bell" class="icon"></i><span class="badge-dot" id="badge" hidden>0</span></a>
+    <a class="profile-btn" href="#settings" aria-label="Profile and settings"><span class="avatar" id="avatar">P</span><span class="nm" id="pname">Parent</span></a>
+   </div>
+  </header>
+  <main class="panels" id="main">
+   <section class="panel" id="p-overview"></section><section class="panel" id="p-children" hidden></section><section class="panel" id="p-enroll" hidden></section>
+   <section class="panel" id="p-schedule" hidden></section><section class="panel" id="p-attendance" hidden></section><section class="panel" id="p-feedback" hidden></section>
+   <section class="panel" id="p-fees" hidden></section><section class="panel" id="p-messages" hidden></section><section class="panel" id="p-settings" hidden></section>
+  </main>
+ </div>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle"><div class="modal-box" id="modalBox"></div></div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+</body></html>

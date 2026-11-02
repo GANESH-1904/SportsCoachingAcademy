@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batch Timings – Weekly Sports Coaching Schedule | Kinetix</title>
+<meta name="description" content="Browse Kinetix batch timings by sport, age and day. Check seats left, coach and monthly fee, then enrol from the parent dashboard.">
+<link rel="icon" href="favicon.ico?v=5" sizes="any"><link rel="icon" type="image/svg+xml" href="favicon.svg?v=5"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=5"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=5">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0C0D10" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Jost:wght@400;500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+</head>
+<body data-page="batches">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="hx hx-batch hx-2col"><img class="bgimg" src="https://images.pexels.com/photos/9487229/pexels-photo-9487229.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="" aria-hidden="true"><div class="hx-shade"></div><div class="container"><div><nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / Batches</nav><span class="tagline">Find a time that fits.</span><h1>Batch timings</h1><p class="lead">Filter by sport, age and day to find open seats. See what is running at the academy today.</p>
+<ul class="bh-stats"><li><b id="bhBatches">13</b><span>Batches</span></li><li><b id="bhSports">8</b><span>Sports</span></li><li><b id="bhSeats">0</b><span>Seats open</span></li></ul>
+<div class="bh-days" role="group" aria-label="Jump to a day"><span class="bh-lbl">Jump to a day</span><div id="dayPills"></div></div>
+<div class="btn-row"><a class="btn btn-primary" href="#bt">Filter batches</a><a class="btn btn-secondary" href="services.html#calc">Fee calculator</a></div></div>
+<div class="glass today" id="today" aria-live="polite"></div></div></section>
+
+<section class="section" aria-labelledby="bt"><div class="container"><div class="section-head"><span class="tagline">Seats are limited.</span><h2 id="bt">Current batches</h2><p>Fees are monthly. Enrol in the dashboard to reserve a seat.</p></div>
+<div class="grid g3" style="margin-bottom:var(--s4)"><div class="field"><label for="fSport">Sport</label><select class="input" id="fSport"><option value="">All sports</option></select></div><div class="field"><label for="fAge">Child’s age</label><select class="input" id="fAge"><option value="">Any age</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option></select></div><div class="field"><label for="fDay">Day</label><select class="input" id="fDay"><option value="">Any day</option><option>Mon</option><option>Tue</option><option>Wed</option><option>Thu</option><option>Fri</option><option>Sat</option><option>Sun</option></select></div></div>
+<div class="table-wrap"><table class="rtable"><caption class="muted" style="text-align:start;padding:12px 16px">Batch timetable</caption><thead><tr><th scope="col">Batch</th><th scope="col">Age</th><th scope="col">Days</th><th scope="col">Time</th><th scope="col">Coach</th><th scope="col">Seats</th><th scope="col">Fee</th><th scope="col"><span class="sr" style="position:absolute;left:-9999px">Action</span></th></tr></thead><tbody id="batchBody"></tbody></table></div>
+<p id="noBatch" class="center muted" hidden style="padding:var(--s5)">No batch matches those filters. Try a different day or age, or <a href="contact.html" style="color:var(--link);font-weight:700">ask our team</a>.</p></div></section>
+
+<section class="section alt" aria-labelledby="wk"><div class="container"><div class="section-head"><span class="tagline">See the whole picture.</span><h2 id="wk">Your week at a glance</h2><p>Every session across all eight sports, laid out day by day. Today is highlighted.</p></div>
+<ul class="wk-legend" aria-label="Colour key"><li><i class="k-team"></i>Team sports</li><li><i class="k-individual"></i>Individual sports</li><li><i class="k-fitness"></i>Fitness</li></ul>
+<div class="wk" id="weekGrid" aria-label="Weekly timetable"></div></div></section>
+
+<section class="section" aria-labelledby="af"><div class="container"><div class="section-head"><span class="tagline">Don’t miss out.</span><h2 id="af">Filling up fast</h2><p>These batches have three seats or fewer left. Reserve now or book a free trial first.</p></div>
+<div class="pc-grid pc-4" id="fillGrid"></div></div></section>
+
+<section class="section alt" aria-labelledby="ts"><div class="container"><div class="section-head"><span class="tagline">Early riser or evening athlete?</span><h2 id="ts">Pick the right time of day</h2><p>Batches fall into three natural slots. Choose the one that fits your school run and your child’s energy.</p></div>
+<div class="pc-grid pc-3" id="slotGrid"></div></div></section>
+
+<section class="section" aria-labelledby="lv"><div class="container"><div class="section-head"><span class="tagline">Grouped by skill.</span><h2 id="lv">How batches are levelled</h2></div><div class="center-grid"><div class="card"><div class="ic-box"><i data-lucide="sprout" class="icon "></i></div><h3>Beginner</h3><p class="muted">New to the sport. Fundamentals through games.</p></div><div class="card"><div class="ic-box"><i data-lucide="layers" class="icon "></i></div><h3>Intermediate</h3><p class="muted">Comfortable with basics. Tactics and consistency.</p></div><div class="card"><div class="ic-box"><i data-lucide="trophy" class="icon "></i></div><h3>Advanced</h3><p class="muted">Competitive players. Match prep and fitness.</p></div></div></div></section>
+
+<section class="section alt" aria-labelledby="hl"><div class="container split">
+<div class="media"><img src="https://images.pexels.com/photos/8422104/pexels-photo-8422104.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Children exercising together at school" loading="lazy" width="1000" height="750"></div>
+<div><span class="tagline">Plan around school.</span><h2 id="hl">Holidays and exam season</h2><p>Training should fit around school life, not fight it. Here is how timetables flex through the year.</p>
+<ul class="checks"><li><i data-lucide="calendar-range" class="icon "></i><span><b>Three terms a year.</b> Fees and batches follow the school calendar.</span></li><li><i data-lucide="sun" class="icon "></i><span><b>Holiday camps.</b> Multi-sport days run in school breaks, open to new and current athletes.</span></li><li><i data-lucide="book-open-check" class="icon "></i><span><b>Exam-week light mode.</b> Older athletes can drop to shorter sessions during board exams.</span></li><li><i data-lucide="cloud-rain" class="icon "></i><span><b>Weather cover.</b> Outdoor batches move indoors or reschedule, with an instant notification.</span></li></ul>
+<a class="btn btn-secondary" href="contact.html">Ask about holiday camps</a></div></div></section>
+
+<section class="section" aria-labelledby="pf"><div class="container"><div class="section-head"><span class="tagline">Good to know.</span><h2 id="pf">Attendance and policies</h2></div><div class="faq"><div class="faq-item"><button class="faq-q" aria-expanded="false">What if my child misses a session?<i data-lucide="plus" class="icon "></i></button><div class="faq-a">Book one make-up session per month from the dashboard, subject to space.</div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">What happens when it rains?<i data-lucide="plus" class="icon "></i></button><div class="faq-a">Outdoor batches move to indoor courts or are rescheduled. You get an instant notification.</div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">Can we switch batches?<i data-lucide="plus" class="icon "></i></button><div class="faq-a">Yes, at the start of any month if seats are available and the age band fits.</div></div></div></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+</body></html>
